@@ -19,6 +19,7 @@ public class ChampionRepository implements IChampionRepository {
 	
 	private ChampionJpaRepository jpaRepository;
 	
+	@Autowired
 	public ChampionRepository(ChampionJpaRepository jpaRepository) {
 		this.jpaRepository = jpaRepository;
 	}
